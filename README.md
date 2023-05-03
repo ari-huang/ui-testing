@@ -23,17 +23,6 @@ Run the robot locally:
  python -m robot --report NONE --outputdir output --logtitle "Task log" tasks.robot
 ```
 
-Provide access credentials for Control Room connectivity:
-
-```
-rcc configure credentials <your_credentials>
-```
-
-Upload to Control Room:
-
-```
-rcc cloud push --workspace <workspace_id> --robot <robot_id>
-```
 
 ### Suggested directory structure
 
