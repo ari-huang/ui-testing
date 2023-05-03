@@ -3,11 +3,24 @@
 Describe your robot here. E.g., what it does, what the requirements are, how to run it.
 
 ## Development guide
+Set up:
+
+```
+1. 安裝 venv
+    python3 -m venv venv
+
+2. 加載 venv
+    source ./venv/bin/activate
+
+3. 安裝依賴套件
+    python -m pip install -U pip setuptools
+    pip install -r requirements.txt
+```
 
 Run the robot locally:
 
 ```
-rcc run
+ python -m robot --report NONE --outputdir output --logtitle "Task log" tasks.robot
 ```
 
 Provide access credentials for Control Room connectivity:

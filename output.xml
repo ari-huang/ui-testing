@@ -1,617 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20230502 17:09:52.065" rpa="true" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20230503 15:32:13.095" rpa="true" schemaversion="3">
 <suite id="s1" name="Tasks" source="/Users/gogolook/roo-ui-testing/tasks.robot">
-<test id="s1-t1" name="Screenshot all credit card category" line="20">
+<test id="s1-t1" name="Example task" line="16">
 <kw name="Set Screenshot Directory" library="RPA.Browser.Selenium" type="SETUP">
 <arg>output</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" starttime="20230502 17:09:54.132" endtime="20230502 17:09:54.133"/>
+<status status="PASS" starttime="20230503 15:32:15.770" endtime="20230503 15:32:15.771"/>
 </kw>
-<kw name="Open Roo Web" library="keywords">
-<kw name="Open Chrome Browser" library="RPA.Browser.Selenium">
-<arg>${roo_web_url}</arg>
-<doc>Open Chrome browser. See ``Open Available Browser`` for
-descriptions of arguments.</doc>
-<msg timestamp="20230502 17:09:54.135" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<msg timestamp="20230502 17:09:54.154" level="INFO">====== WebDriver manager ======</msg>
-<msg timestamp="20230502 17:09:54.590" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<msg timestamp="20230502 17:09:57.076" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
-<msg timestamp="20230502 17:09:57.077" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;True&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
-<msg timestamp="20230502 17:09:57.078" level="INFO">Opening url 'https://roo.cash'</msg>
-<status status="PASS" starttime="20230502 17:09:54.134" endtime="20230502 17:09:58.749"/>
-</kw>
-<kw name="Maximize Browser Window" library="RPA.Browser.Selenium">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230502 17:09:58.750" endtime="20230502 17:09:59.214"/>
-</kw>
-<status status="PASS" starttime="20230502 17:09:54.133" endtime="20230502 17:09:59.214"/>
-</kw>
-<kw name="Click Roo Product Compare tab" library="keywords">
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>xpath://*[@id="nav-content"]/ul/li[4]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:09:59.218" level="INFO">Clicking element 'xpath://*[@id="nav-content"]/ul/li[4]'.</msg>
-<status status="PASS" starttime="20230502 17:09:59.216" endtime="20230502 17:09:59.297"/>
-</kw>
-<kw name="Mouse Down" library="RPA.Browser.Selenium">
-<arg>xpath://*[@id="link-list"]</arg>
-<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
-<msg timestamp="20230502 17:09:59.298" level="INFO">Simulating Mouse Down on element 'xpath://*[@id="link-list"]'.</msg>
-<status status="PASS" starttime="20230502 17:09:59.298" endtime="20230502 17:09:59.613"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>xpath://*[@id="link-list"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:09:59.613" level="INFO">Clicking element 'xpath://*[@id="link-list"]'.</msg>
-<status status="PASS" starttime="20230502 17:09:59.613" endtime="20230502 17:10:00.831"/>
-</kw>
-<status status="PASS" starttime="20230502 17:09:59.215" endtime="20230502 17:10:00.831"/>
-</kw>
-<kw name="Move Specific Element Into View" library="keywords">
-<kw name="Page Should Contain Element" library="RPA.Browser.Selenium">
-<arg>xpath://*[@id="tab-all"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230502 17:10:00.857" level="INFO">Current page contains element 'xpath://*[@id="tab-all"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:00.832" endtime="20230502 17:10:00.857"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<arg>Scroll Element Into View</arg>
-<arg>xpath://*[@id="tab-all"]</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<kw name="Scroll Element Into View" library="RPA.Browser.Selenium">
-<arg>xpath://*[@id="tab-all"]</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<msg timestamp="20230502 17:10:01.319" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-1.png"&gt;&lt;img src="output/selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230502 17:10:01.320" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
-  (Session info: chrome=112.0.5615.137)
-Stacktrace:
-0   chromedriver                        0x000000010f6a3ae8 chromedriver + 4958952
-1   chromedriver                        0x000000010f69b7b3 chromedriver + 4925363
-2   chromedriver                        0x000000010f25d051 chromedriver + 475217
-3   chromedriver                        0x000000010f2ecb4b chromedriver + 1063755
-4   chromedriver                        0x000000010f2c6c12 chromedriver + 908306
-5   chromedriver                        0x000000010f2e225b chromedriver + 1020507
-6   chromedriver                        0x000000010f2c69e3 chromedriver + 907747
-7   chromedriver                        0x000000010f290aef chromedriver + 686831
-8   chromedriver                        0x000000010f29200e chromedriver + 692238
-9   chromedriver                        0x000000010f65f9ad chromedriver + 4680109
-10  chromedriver                        0x000000010f664c12 chromedriver + 4701202
-11  chromedriver                        0x000000010f66b79f chromedriver + 4728735
-12  chromedriver                        0x000000010f665b7a chromedriver + 4705146
-13  chromedriver                        0x000000010f63827e chromedriver + 4518526
-14  chromedriver                        0x000000010f685908 chromedriver + 4835592
-15  chromedriver                        0x000000010f685a87 chromedriver + 4835975
-16  chromedriver                        0x000000010f69500f chromedriver + 4898831
-17  libsystem_pthread.dylib             0x00007ff819cfc4e1 _pthread_start + 125
-18  libsystem_pthread.dylib             0x00007ff819cf7f6b thread_start + 15
-</msg>
-<status status="FAIL" starttime="20230502 17:10:00.858" endtime="20230502 17:10:01.330"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:00.858" endtime="20230502 17:10:01.330"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:00.832" endtime="20230502 17:10:01.330"/>
-</kw>
-<for flavor="IN">
-<var>${counter}</var>
-<value>@{credit_card_category}</value>
-<iter>
-<var name="${counter}">所有卡片</var>
+<kw name="Example keyword" library="keywords">
 <kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
+<arg>Today is ${TODAY}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:01.332" level="INFO">Num value is 所有卡片</msg>
-<status status="PASS" starttime="20230502 17:10:01.331" endtime="20230502 17:10:01.333"/>
+<msg timestamp="20230503 15:32:15.773" level="INFO">Today is 2023-05-03 15:32:15.766360</msg>
+<status status="PASS" starttime="20230503 15:32:15.772" endtime="20230503 15:32:15.773"/>
 </kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:01.334" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:01.334" endtime="20230502 17:10:01.446"/>
+<status status="PASS" starttime="20230503 15:32:15.772" endtime="20230503 15:32:15.773"/>
 </kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:01.447" level="INFO">Clicking element '//*[@id="tab-all"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:01.446" endtime="20230502 17:10:01.530"/>
+<kw name="Example Python Keyword">
+<msg timestamp="20230503 15:32:15.781" level="FAIL">No keyword with name 'Example Python Keyword' found.</msg>
+<status status="FAIL" starttime="20230503 15:32:15.781" endtime="20230503 15:32:15.782"/>
 </kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:01.985" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E6%89%80%E6%9C%89%E5%8D%A1%E7%89%87.png"&gt;&lt;img src="output/selenium-screenshot-%E6%89%80%E6%9C%89%E5%8D%A1%E7%89%87.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:01.530" endtime="20230502 17:10:01.987"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:01.331" endtime="20230502 17:10:01.987"/>
-</iter>
-<iter>
-<var name="${counter}">2023 精選信用卡推薦</var>
 <kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
+<arg>${TODAY}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:01.989" level="INFO">Num value is 2023 精選信用卡推薦</msg>
-<status status="PASS" starttime="20230502 17:10:01.988" endtime="20230502 17:10:01.989"/>
+<status status="NOT RUN" starttime="20230503 15:32:15.783" endtime="20230503 15:32:15.783"/>
 </kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:01.990" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:01.989" endtime="20230502 17:10:02.062"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:02.063" level="INFO">Clicking element '//*[@id="tab-creditcard"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:02.062" endtime="20230502 17:10:02.158"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:02.629" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-2023%20%E7%B2%BE%E9%81%B8%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%8E%A8%E8%96%A6.png"&gt;&lt;img src="output/selenium-screenshot-2023%20%E7%B2%BE%E9%81%B8%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%8E%A8%E8%96%A6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:02.158" endtime="20230502 17:10:02.629"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:01.988" endtime="20230502 17:10:02.629"/>
-</iter>
-<iter>
-<var name="${counter}">繳稅優惠</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:02.630" level="INFO">Num value is 繳稅優惠</msg>
-<status status="PASS" starttime="20230502 17:10:02.630" endtime="20230502 17:10:02.631"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:02.631" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:02.631" endtime="20230502 17:10:02.683"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:02.685" level="INFO">Clicking element '//*[@id="tab-tax-filing"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:02.683" endtime="20230502 17:10:02.780"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:03.251" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E7%B9%B3%E7%A8%85%E5%84%AA%E6%83%A0.png"&gt;&lt;img src="output/selenium-screenshot-%E7%B9%B3%E7%A8%85%E5%84%AA%E6%83%A0.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:02.780" endtime="20230502 17:10:03.251"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:02.630" endtime="20230502 17:10:03.252"/>
-</iter>
-<iter>
-<var name="${counter}">現金回饋</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:03.253" level="INFO">Num value is 現金回饋</msg>
-<status status="PASS" starttime="20230502 17:10:03.253" endtime="20230502 17:10:03.253"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:03.254" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:03.254" endtime="20230502 17:10:03.305"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:03.307" level="INFO">Clicking element '//*[@id="tab-cashback"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:03.306" endtime="20230502 17:10:03.393"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:03.866" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E7%8F%BE%E9%87%91%E5%9B%9E%E9%A5%8B.png"&gt;&lt;img src="output/selenium-screenshot-%E7%8F%BE%E9%87%91%E5%9B%9E%E9%A5%8B.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:03.393" endtime="20230502 17:10:03.867"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:03.252" endtime="20230502 17:10:03.867"/>
-</iter>
-<iter>
-<var name="${counter}">網購</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:03.869" level="INFO">Num value is 網購</msg>
-<status status="PASS" starttime="20230502 17:10:03.868" endtime="20230502 17:10:03.869"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:03.870" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:03.869" endtime="20230502 17:10:03.973"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:03.975" level="INFO">Clicking element '//*[@id="tab-online-shopping"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:03.973" endtime="20230502 17:10:04.143"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:04.695" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E7%B6%B2%E8%B3%BC.png"&gt;&lt;img src="output/selenium-screenshot-%E7%B6%B2%E8%B3%BC.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:04.143" endtime="20230502 17:10:04.695"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:03.867" endtime="20230502 17:10:04.695"/>
-</iter>
-<iter>
-<var name="${counter}">行動支付</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:04.696" level="INFO">Num value is 行動支付</msg>
-<status status="PASS" starttime="20230502 17:10:04.696" endtime="20230502 17:10:04.696"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:04.698" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:04.697" endtime="20230502 17:10:04.750"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:04.753" level="INFO">Clicking element '//*[@id="tab-mobile-payment"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:04.751" endtime="20230502 17:10:04.866"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:05.305" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E8%A1%8C%E5%8B%95%E6%94%AF%E4%BB%98.png"&gt;&lt;img src="output/selenium-screenshot-%E8%A1%8C%E5%8B%95%E6%94%AF%E4%BB%98.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:04.866" endtime="20230502 17:10:05.306"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:04.696" endtime="20230502 17:10:05.306"/>
-</iter>
-<iter>
-<var name="${counter}">影音娛樂</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:05.307" level="INFO">Num value is 影音娛樂</msg>
-<status status="PASS" starttime="20230502 17:10:05.307" endtime="20230502 17:10:05.308"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:05.308" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:05.308" endtime="20230502 17:10:05.355"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:05.358" level="INFO">Clicking element '//*[@id="tab-entertainment"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:05.356" endtime="20230502 17:10:05.449"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:05.873" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E5%BD%B1%E9%9F%B3%E5%A8%9B%E6%A8%82.png"&gt;&lt;img src="output/selenium-screenshot-%E5%BD%B1%E9%9F%B3%E5%A8%9B%E6%A8%82.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:05.449" endtime="20230502 17:10:05.874"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:05.307" endtime="20230502 17:10:05.874"/>
-</iter>
-<iter>
-<var name="${counter}">美食外送</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:05.876" level="INFO">Num value is 美食外送</msg>
-<status status="PASS" starttime="20230502 17:10:05.875" endtime="20230502 17:10:05.876"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:05.877" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:05.877" endtime="20230502 17:10:05.923"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:05.925" level="INFO">Clicking element '//*[@id="tab-food-delivery"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:05.924" endtime="20230502 17:10:06.014"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:06.451" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E7%BE%8E%E9%A3%9F%E5%A4%96%E9%80%81.png"&gt;&lt;img src="output/selenium-screenshot-%E7%BE%8E%E9%A3%9F%E5%A4%96%E9%80%81.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:06.014" endtime="20230502 17:10:06.451"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:05.874" endtime="20230502 17:10:06.452"/>
-</iter>
-<iter>
-<var name="${counter}">旅遊訂房</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:06.453" level="INFO">Num value is 旅遊訂房</msg>
-<status status="PASS" starttime="20230502 17:10:06.452" endtime="20230502 17:10:06.453"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:06.454" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:06.454" endtime="20230502 17:10:06.513"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:06.516" level="INFO">Clicking element '//*[@id="tab-travel-booking"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:06.514" endtime="20230502 17:10:06.647"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:07.091" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E6%97%85%E9%81%8A%E8%A8%82%E6%88%BF.png"&gt;&lt;img src="output/selenium-screenshot-%E6%97%85%E9%81%8A%E8%A8%82%E6%88%BF.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:06.648" endtime="20230502 17:10:07.091"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:06.452" endtime="20230502 17:10:07.091"/>
-</iter>
-<iter>
-<var name="${counter}">海外消費</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:07.093" level="INFO">Num value is 海外消費</msg>
-<status status="PASS" starttime="20230502 17:10:07.092" endtime="20230502 17:10:07.093"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:07.094" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:07.093" endtime="20230502 17:10:07.138"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:07.139" level="INFO">Clicking element '//*[@id="tab-overseas-shopping"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:07.138" endtime="20230502 17:10:07.229"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:07.672" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E6%B5%B7%E5%A4%96%E6%B6%88%E8%B2%BB.png"&gt;&lt;img src="output/selenium-screenshot-%E6%B5%B7%E5%A4%96%E6%B6%88%E8%B2%BB.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:07.229" endtime="20230502 17:10:07.672"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:07.092" endtime="20230502 17:10:07.672"/>
-</iter>
-<iter>
-<var name="${counter}">交通通勤</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:07.673" level="INFO">Num value is 交通通勤</msg>
-<status status="PASS" starttime="20230502 17:10:07.673" endtime="20230502 17:10:07.674"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:07.674" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:07.674" endtime="20230502 17:10:07.724"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:07.725" level="INFO">Clicking element '//*[@id="tab-commute"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:07.724" endtime="20230502 17:10:07.820"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:08.242" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E4%BA%A4%E9%80%9A%E9%80%9A%E5%8B%A4.png"&gt;&lt;img src="output/selenium-screenshot-%E4%BA%A4%E9%80%9A%E9%80%9A%E5%8B%A4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:07.821" endtime="20230502 17:10:08.243"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:07.673" endtime="20230502 17:10:08.243"/>
-</iter>
-<iter>
-<var name="${counter}">超商量販</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:08.244" level="INFO">Num value is 超商量販</msg>
-<status status="PASS" starttime="20230502 17:10:08.244" endtime="20230502 17:10:08.245"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:08.245" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:08.245" endtime="20230502 17:10:08.296"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:08.298" level="INFO">Clicking element '//*[@id="tab-grocery-store"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:08.296" endtime="20230502 17:10:08.387"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:08.820" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E8%B6%85%E5%95%86%E9%87%8F%E8%B2%A9.png"&gt;&lt;img src="output/selenium-screenshot-%E8%B6%85%E5%95%86%E9%87%8F%E8%B2%A9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:08.387" endtime="20230502 17:10:08.821"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:08.243" endtime="20230502 17:10:08.821"/>
-</iter>
-<iter>
-<var name="${counter}">保費回饋</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:08.822" level="INFO">Num value is 保費回饋</msg>
-<status status="PASS" starttime="20230502 17:10:08.821" endtime="20230502 17:10:08.822"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:08.823" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:08.822" endtime="20230502 17:10:08.875"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:08.876" level="INFO">Clicking element '//*[@id="tab-insurance-and-medical-care"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:08.875" endtime="20230502 17:10:08.959"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:09.379" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E4%BF%9D%E8%B2%BB%E5%9B%9E%E9%A5%8B.png"&gt;&lt;img src="output/selenium-screenshot-%E4%BF%9D%E8%B2%BB%E5%9B%9E%E9%A5%8B.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:08.959" endtime="20230502 17:10:09.379"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:08.821" endtime="20230502 17:10:09.380"/>
-</iter>
-<iter>
-<var name="${counter}">停車加油</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:09.381" level="INFO">Num value is 停車加油</msg>
-<status status="PASS" starttime="20230502 17:10:09.380" endtime="20230502 17:10:09.381"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:09.381" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:09.381" endtime="20230502 17:10:09.449"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:09.451" level="INFO">Clicking element '//*[@id="tab-parking-and-fueling"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:09.450" endtime="20230502 17:10:09.555"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:09.996" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E5%81%9C%E8%BB%8A%E5%8A%A0%E6%B2%B9.png"&gt;&lt;img src="output/selenium-screenshot-%E5%81%9C%E8%BB%8A%E5%8A%A0%E6%B2%B9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:09.555" endtime="20230502 17:10:09.996"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:09.380" endtime="20230502 17:10:09.996"/>
-</iter>
-<iter>
-<var name="${counter}">百貨購物</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:09.997" level="INFO">Num value is 百貨購物</msg>
-<status status="PASS" starttime="20230502 17:10:09.997" endtime="20230502 17:10:09.998"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:09.998" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:09.998" endtime="20230502 17:10:10.046"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:10.048" level="INFO">Clicking element '//*[@id="tab-department-store-shopping"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:10.047" endtime="20230502 17:10:10.127"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:10.550" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E7%99%BE%E8%B2%A8%E8%B3%BC%E7%89%A9.png"&gt;&lt;img src="output/selenium-screenshot-%E7%99%BE%E8%B2%A8%E8%B3%BC%E7%89%A9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:10.128" endtime="20230502 17:10:10.550"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:09.996" endtime="20230502 17:10:10.551"/>
-</iter>
-<iter>
-<var name="${counter}">生活繳費</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:10.552" level="INFO">Num value is 生活繳費</msg>
-<status status="PASS" starttime="20230502 17:10:10.551" endtime="20230502 17:10:10.552"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:10.553" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:10.553" endtime="20230502 17:10:10.599"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:10.601" level="INFO">Clicking element '//*[@id="tab-utility-bill-payment"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:10.600" endtime="20230502 17:10:10.704"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:11.124" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E7%94%9F%E6%B4%BB%E7%B9%B3%E8%B2%BB.png"&gt;&lt;img src="output/selenium-screenshot-%E7%94%9F%E6%B4%BB%E7%B9%B3%E8%B2%BB.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:10.705" endtime="20230502 17:10:11.124"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:10.551" endtime="20230502 17:10:11.125"/>
-</iter>
-<iter>
-<var name="${counter}">哩程累積</var>
-<kw name="Log" library="BuiltIn">
-<arg>Num value is ${counter}</arg>
-<arg>console=yes</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230502 17:10:11.126" level="INFO">Num value is 哩程累積</msg>
-<status status="PASS" starttime="20230502 17:10:11.125" endtime="20230502 17:10:11.126"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[contains(text(),"更多")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:11.127" level="INFO">Clicking element '//*[contains(text(),"更多")]'.</msg>
-<status status="PASS" starttime="20230502 17:10:11.127" endtime="20230502 17:10:11.182"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>//*[@id="${credit_card_category["${counter}"]}"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230502 17:10:11.184" level="INFO">Clicking element '//*[@id="tab-mile"]'.</msg>
-<status status="PASS" starttime="20230502 17:10:11.182" endtime="20230502 17:10:11.264"/>
-</kw>
-<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
-<arg>selenium-screenshot-${counter}.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230502 17:10:11.745" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="output/selenium-screenshot-%E5%93%A9%E7%A8%8B%E7%B4%AF%E7%A9%8D.png"&gt;&lt;img src="output/selenium-screenshot-%E5%93%A9%E7%A8%8B%E7%B4%AF%E7%A9%8D.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230502 17:10:11.265" endtime="20230502 17:10:11.746"/>
-</kw>
-<status status="PASS" starttime="20230502 17:10:11.125" endtime="20230502 17:10:11.746"/>
-</iter>
-<status status="PASS" starttime="20230502 17:10:01.331" endtime="20230502 17:10:11.746"/>
-</for>
 <kw name="Close All Browsers" library="RPA.Browser.Selenium" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230502 17:10:11.747" endtime="20230502 17:10:11.995"/>
+<status status="PASS" starttime="20230503 15:32:15.784" endtime="20230503 15:32:15.784"/>
 </kw>
-<doc>Screenshot all credit card category</doc>
-<tag>web</tag>
-<status status="PASS" starttime="20230502 17:09:54.130" endtime="20230502 17:10:11.996"/>
+<status status="FAIL" starttime="20230503 15:32:15.769" endtime="20230503 15:32:15.785">No keyword with name 'Example Python Keyword' found.</status>
 </test>
 <doc>Template robot main suite.</doc>
-<status status="PASS" starttime="20230502 17:09:52.074" endtime="20230502 17:10:12.000"/>
+<status status="FAIL" starttime="20230503 15:32:13.105" endtime="20230503 15:32:15.786"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tasks</stat>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">web</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230503 15:32:14.127" level="ERROR">Error in file '/Users/gogolook/roo-ui-testing/tasks.robot' on line 6: Importing library '../libariess/MyLibrary' failed: ModuleNotFoundError: No module named '.'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Users/gogolook/roo-ui-testing/keywords
+  /Users/gogolook/roo-ui-testing/resources
+  /Users/gogolook/roo-ui-testing/libraries
+  /Users/gogolook/.vscode/extensions/robocorp.robotframework-lsp-1.10.1/src/robotframework_debug_adapter
+  /Users/gogolook/roo-ui-testing/keywords
+  /Users/gogolook/roo-ui-testing/resources
+  /Users/gogolook/roo-ui-testing/libraries
+  /Users/gogolook/.vscode/extensions/robocorp.robotframework-lsp-1.10.1/src
+  /Users/gogolook/.vscode/extensions/robocorp.robotframework-lsp-1.10.1/src/robotframework_ls/vendored
+  /Users/Shared/robocorp/ht/bc14962_b1f3c24_1c0bc041/lib/python39.zip
+  /Users/Shared/robocorp/ht/bc14962_b1f3c24_1c0bc041/lib/python3.9
+  /Users/Shared/robocorp/ht/bc14962_b1f3c24_1c0bc041/lib/python3.9/lib-dynload
+  /Users/Shared/robocorp/ht/bc14962_b1f3c24_1c0bc041/lib/python3.9/site-packages</msg>
 </errors>
 </robot>

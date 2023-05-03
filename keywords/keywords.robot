@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       Template keyword resource.
 
-Variables           variables.py
+Variables           resources/variables.py
 Library             RPA.Browser.Selenium
 
 

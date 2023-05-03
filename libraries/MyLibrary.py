@@ -1,6 +1,6 @@
-from robot.api import logger
 # example of accessing a variable from variables.py
-from variables import TODAY
+from resources.variables import TODAY
+from robot.api import logger
 
 
 class MyLibrary:

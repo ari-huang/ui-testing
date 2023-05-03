@@ -1,11 +1,12 @@
 *** Settings ***
 Documentation       Template robot main suite.
 
+Library             RPA.Browser.Selenium
 Library             Collections
-Library             MyLibrary
+Library             libraries/MyLibrary.py
 Library             RPA.Desktop
-Resource            keywords.robot
-Variables           variables.py
+Resource            keywords/keywords.robot
+Variables           resources/variables.py
 
 Test Setup          Set Screenshot Directory    output
 Test Teardown       Close All Browsers
