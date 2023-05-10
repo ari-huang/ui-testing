@@ -20,7 +20,7 @@ Set up:
 Run the robot locally:
 
 ```
- python -m robot --report NONE --outputdir output --logtitle "Task log" tasks.robot
+ python -m robot --report NONE --outputdir output --logtitle "Task log" testcase/tasks.robot
 ```
 
 
